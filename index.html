@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bubble Navigation Animation</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+  <h1>Bubble Navigation Animation</h1>
+  <section class="demo-frame">
+    <div class="nav-stage">
+      <nav class="bubble-nav" aria-label="Main navigation">
+        <button class="bubble active blue" data-label="Home" aria-label="Home" aria-current="page"><span class="ico">⌂</span><span class="label">Home</span></button>
+        <button class="bubble purple" data-label="Profile" aria-label="Profile"><span class="ico">♟</span><span class="label">Profile</span></button>
+        <button class="bubble green" data-label="Settings" aria-label="Settings"><span class="ico">⚙</span><span class="label">Settings</span></button>
+        <button class="bubble orange" data-label="Messages" aria-label="Messages"><span class="ico">✉</span><span class="label">Messages</span></button>
+      </nav>
+      <div class="nav-caption"><span class="pulse-dot"></span><span id="activeCaption">Home selected</span></div>
+    </div>
+    <div class="editor">
+      <div class="editor-top"><div class="window-dots"><i></i><i></i><i></i></div><span>navigation.css</span><span class="editor-lang">CSS</span></div>
+      <div class="editor-body">
+        <div class="gutter">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17</div>
+        <pre id="codeView"><code><span class="pink">.bubble-nav</span> {
+  <span class="cyan">display</span>: flex;
+  <span class="cyan">align-items</span>: center;
+  <span class="cyan">gap</span>: 14px;
+  <span class="cyan">padding</span>: 12px;
+  <span class="cyan">background</span>: #111827;
+  <span class="cyan">border-radius</span>: 999px;
+}
+
+<span class="pink">.bubble</span> {
+  <span class="cyan">width</span>: 48px;
+  <span class="cyan">height</span>: 48px;
+  <span class="cyan">border-radius</span>: 999px;
+  <span class="cyan">transition</span>: all .4s ease;
+}</code></pre>
+      </div>
+      <div class="editor-foot"><span>● Live preview connected</span><span>UTF-8&nbsp;&nbsp; CSS</span></div>
+    </div>
+  </section>
+  <p class="hint">Hover or tap an icon to expand its bubble. Click to keep it selected.</p>
+  <div class="controls"><button id="replay">↻ Replay animation</button><button id="copyCode">Copy CSS</button></div>
+</main>
+<script src="script.js"></script>
+</body></html>
